@@ -110,7 +110,7 @@ header .nav--items__link {
   gap: 3rem;
   padding: 12rem 2rem 3rem;
   margin-top: 6rem;
-  background-image: url("../../images/bg-curve-mobile.svg");
+  background-image: url("../images/bg-curve-mobile.svg");
   background-position: center top;
   background-size: 500% 100%;
   background-repeat: no-repeat;
@@ -286,6 +286,7 @@ header .nav--items__link {
   }
   .hero--text {
     text-align: start;
+    transform: translateX(0);
   }
   .hero--text h1 {
     font-size: 3rem;
@@ -312,9 +313,11 @@ header .nav--items__link {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    background-image: url("../images/bg-curve-desktop.svg");
   }
   .about--text {
     padding: 1rem;
+    transform: translateX(0);
   }
   .about--text h1 {
     text-align: left;
@@ -345,6 +348,7 @@ header .nav--items__link {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    opacity: 1;
   }
   .subscribe--text {
     text-align: left;
