@@ -1,0 +1,96 @@
+.about {
+  @include flexContainer(column-reverse);
+  gap: 3rem;
+  padding: 12rem 2rem 3rem;
+  margin-top: 6rem;
+  background-image: url('../../images/bg-curve-mobile.svg');
+  background-position: center top;
+  background-size: 500% 100%;
+  background-repeat: no-repeat;
+
+  &--img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &--text {
+    transform: translateX(-100%);
+    @include transition;
+    padding: 1.5rem;
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3.4rem;
+      padding: 2rem 0 1.5rem;
+      line-height: 1.5;
+    }
+    & > p {
+      margin: 2rem 0;
+    }
+
+    .how {
+      width: fit-content;
+      @include flexContainer;
+      margin: 0 auto;
+      border-bottom: 3px solid $accent-cyan;
+      padding: 0.5rem 0;
+      @include transition;
+      @include cursor;
+
+      p {
+        text-align: center;
+        color: $accent-cyan;
+        font-weight: 400;
+      }
+      img {
+        margin-left: 1rem;
+        width: 30px;
+        aspect-ratio: 1;
+      }
+    }
+
+    .testimonial {
+        background: hsl(0, 0%, 100%);
+      margin: 8rem auto;
+      width: 80%;
+      border-radius: 8px;
+      padding: 4rem;
+      box-shadow: 2px 2px 9px 5px $gray;
+
+      &--quote {
+        img {
+          width: 20px;
+          aspect-ratio: 1;
+        }
+      }
+
+      &--text {
+        padding: 1.5rem 0;
+        font-size: 1.9rem;
+      }
+
+      &--info {
+        @include flexContainer (row, flex-start);
+        gap: 15px;
+
+        &__img {
+            img {
+            width: 60px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+          }
+        }
+
+        &__title{
+
+            p{
+                font-size: 1.7rem;
+            }
+        }
+      }
+    }
+  }
+}

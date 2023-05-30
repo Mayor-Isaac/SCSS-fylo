@@ -1,0 +1,45 @@
+$primary-dark-blue : hsl(243, 87%, 12%);
+$primary-blue : hsl(238, 22%, 44%);
+$accent-blue : hsl(224, 93%, 58%);
+$accent-cyan : hsl(170, 45%, 43%);
+$white : hsl(240, 75%, 98%);
+$gray : hsl(0, 0%, 75%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.rale-way{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.text-secondary{
+    color: $primary-blue;
+}
+
+@mixin transition (){
+    transition: all .5s ease-in-out;
+}
+
+@mixin flexContainer($direction : row, $content : space-between){
+    display: flex;
+    align-items: center;
+    justify-content: $content;
+    flex-direction: $direction;
+}
+
+@mixin cursor{
+    cursor: pointer;
+}
+
+@mixin mobile{
+    @media screen and (min-width : 768px) {
+        @content
+    }
+}

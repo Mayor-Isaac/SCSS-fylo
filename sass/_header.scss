@@ -1,0 +1,33 @@
+header{
+    @include flexContainer(row);
+    padding: 2rem;
+    
+    .brand{
+        width: 120px;
+        
+        img{
+            width: 100%;
+        }
+    }
+    
+    .nav{
+        
+        &--items{
+            @include flexContainer(row);
+            gap: 1.5rem;
+            
+            &__link{
+                @include cursor;
+                padding : .2rem .4rem;
+                @include transition;
+
+
+                // &:hover{
+                //     font-weight: 900;
+                // }
+
+            }
+        }
+
+    }
+}

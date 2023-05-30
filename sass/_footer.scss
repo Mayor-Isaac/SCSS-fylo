@@ -1,0 +1,41 @@
+.footer {
+  background: $primary-dark-blue;
+  color: $white;
+  padding: 4rem;
+
+  &--logo {
+    img {
+      filter: invert(100%);
+    }
+  }
+
+  &--info {
+    &__items {
+      margin-top: 3rem;
+
+      li{
+        padding: .5rem 0;
+        @include transition;
+        @include cursor;
+
+        &:hover{
+          color: $accent-blue
+        }
+      }
+
+      .contact{
+        @include flexContainer(row, flex-start);
+        gap: 10px;
+      }
+    }
+  }
+
+  .attribution{
+    margin-top: 1rem;
+    text-align: center;
+
+    a{
+        color: $accent-blue
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@include mobile {
+
+    .hero{
+        @include flexContainer( row);
+        gap: 50px;
+        padding: 4rem 2rem;
+    
+        // &--img{
+        //     width: 100%;
+    
+        //     img{
+        //         width: 100%;
+        //     }
+        // }
+        
+        &--text{
+            text-align: start;
+            h1{
+                font-size: 3rem;
+                line-height: 1;
+            }
+                        
+            &__cta{
+                @include flexContainer(row);
+                gap: 20px;
+                
+                .mail{
+                    width: 60%;
+                    height: 50px;
+    
+                }
+    
+                .btn{
+                    width: 40%;
+                    text-align: center;
+                    padding: 1.2rem 0;
+                    
+                }
+            }
+        }
+    }
+
+    .about{
+        @include flexContainer(row);
+
+        &--text{
+            padding: 1rem;
+
+            h1 {
+                text-align: left;
+                font-size: 3rem;
+                padding: 1.5rem 0;
+                line-height: 1.5;
+              }
+
+              & > p {
+                margin: 1rem 0;
+              }
+
+              .how {
+                margin: 0;
+                padding: 0.5rem 0;
+              }
+
+              .testimonial {
+              margin: 3rem 0;
+              width: 80%;
+              padding: 2rem;
+        
+              &--text {
+                padding: 1.5rem 0;
+                font-size: 1.9rem;
+              }
+            }
+        }
+    }
+    
+    .subscribe{
+        gap: 70px;
+        padding: 2rem;
+        @include flexContainer;
+        
+        
+        &--text{
+            text-align: left;
+            width: 50%;
+            h1{
+                font-size: 3rem;
+                line-height: normal;
+            }
+            p{
+                margin: 1rem 0;
+                font-size: 2rem
+            }
+        }
+    
+        &__cta{
+            align-items: flex-start;
+            gap: 15px;
+            width: 50%;
+            
+            &>*{
+                margin: 0;
+            }
+            
+            .mail{
+                width: 75%;
+    
+            }
+    
+            .btn{
+                padding: 1rem;
+                width: fit-content;
+            }
+        }
+    }
+
+    .footer--info{
+        @include flexContainer;
+        align-items: flex-start;
+        padding-right: 100px;
+    }
+}

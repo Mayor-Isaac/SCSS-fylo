@@ -1,0 +1,55 @@
+.subscribe{
+    background: $primary-blue;
+    color: $white;
+    text-align: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    opacity: 0.5;
+
+
+    &--text{
+        padding: 1.5rem;
+        h1{
+            font-weight: 700;
+            font-size: 3.8rem;
+            line-height: 1.5;
+        }
+        p{
+            margin: 2rem 0;
+        }
+    }
+
+    &__cta{
+        @include flexContainer(column);
+        gap: 20px;
+
+        &>*{
+            width: 75%;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+        
+        .mail{
+            height: fit-content;
+            
+            input{
+                @include cursor;
+                border: 2px solid $gray;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                padding: 1rem 2rem;
+                font-size: 2rem;
+
+            }
+
+        }
+
+        .btn{
+            background: $accent-blue;
+            padding: 1.2rem 0;
+            @include cursor
+            
+        }
+    }
+}
