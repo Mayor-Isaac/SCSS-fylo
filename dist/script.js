@@ -40,9 +40,9 @@ inputs.forEach(inp =>{
     })
 })
 
-// OBSERVER
-
-const header = document.querySelector('header')
+//MOBILE OBSERVER
+if(window.innerWidth <= 768){
+  const header = document.querySelector('header')
 const heroText = document.querySelector('.hero--text')
 
 const hero = document.querySelector('.hero')
@@ -103,3 +103,6 @@ aboutObserver.observe(hero);
 
 const subObserver = new IntersectionObserver(subObserverFn, subObj);
 subObserver.observe(about);
+
+}
+
